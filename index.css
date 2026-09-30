@@ -67,9 +67,11 @@ ul.navigation a:hover img{
   color: white;
 }
 
+/*
 #active img {
   filter: invert(1);
 }
+*/
 
 ul.navigation a img {
   width: 20px;
