@@ -326,7 +326,7 @@ div.page {
 
 .postcardParagraph {
   background: white;
-  text-align: left;
+  justify-content: flex-start;
   width: 50%;
   max-width: 400px;
   height: auto;
