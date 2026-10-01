@@ -274,6 +274,90 @@ div.page {
   text-align: center;
 }
 
+/*Postcard*/
+.postcard {
+  width: auto;
+  height: 300px;
+  background: white;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 20px;
+  justify-content: center;
+
+  /* 
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  */
+}
+
+.postcardImage {
+  width: 50%;
+  height: auto;
+  max-width: 300px;
+  align-content: center;
+  background: white;
+  border: 3px solid;
+  border-image: linear-gradient(45deg, black) 1;
+}
+
+.postcardImage:hover {
+  animation: gradient-border 2s infinite;
+}
+
+@keyframes gradient-border {
+  0% {
+    border-image-source: linear-gradient(45deg, #f31261, #8e44ad, #3498db);
+  }
+  50% {
+    border-image-source: linear-gradient(45deg, #8e44ad, #3498db, #f31261);
+  }
+  100% {
+    border-image-source: linear-gradient(45deg, #f31261, #8e44ad, #3498db);
+  }
+}
+
+.postcard img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  max-height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.postcardParagraph {
+  background: white;
+  width: 50%;
+  max-width: 400px;
+  height: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-left: 10px;
+  padding: 10px;
+  border: 3px solid;
+  border-image: linear-gradient(45deg, black) 1;
+}
+
+.postcardParagraph:hover {
+  animation: gradient-border 2s infinite;
+}
+
+.postcardParagraph::-webkit-scrollbar {
+  width: 10px;
+}
+
+.postcardParagraph::-webkit-scrollbar-track {
+  background: white;
+}
+
+.postcardParagraph::-webkit-scrollbar-thumb {
+  background: white;
+  border-color: black;
+  border-width: 3px;
+  border-style: solid;
+}
+
 /*Scroll Bar*/
 body::-webkit-scrollbar {
   width: 20px;
