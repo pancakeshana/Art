@@ -1,6 +1,6 @@
 /*Logo*/
 h1 {
-  font-family: "DynaPuff";
+  font-family: "Playfair Display SC";
   text-align: center;
   background: white;
   font-size: 36px;
@@ -12,7 +12,7 @@ h1 {
 } 
 
 body {
-  font-family: "Patrick Hand SC";
+  font-family: "Outfit";
   background: white;
   cursor: url("ZCursor.svg"), auto;
 }
